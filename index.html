@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Administrador de listas</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Formulario</title>
 </head>
+
 <body>
-   
+    <header>
+        <nav id="navegador">
+            <ul class="leftSide">
+                <li>
+                    <img id="logoNavegador" src="imágenes/logo blanco.png" alt="Logo navegador">
+                </li>
+                <li id="botonNavegador1"> <a href="#">Easy Resources</a></li>
+            </ul>
+            <ul class="rightSide">
+                <li id="botonNavegador2">
+                    <div class="dropdown">
+                        <p> Contáctanos</p>
+                        <div class="dropdown-content">
+                            <a href="https://www.linkedin.com/feed/" target="_blank">Nohely</a>
+                </li>
+                <li id="botonNavegador3"> <a
+                        href="https://rimasdecolores.blogspot.com/p/juegos-didacticos-online.html">Blog</a></li>
+                <li id="botonNavegador3"> <a href="https://www.mundoprimaria.com/recursos-educativos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="form">
+            <form class="formulario" method="POST">
+                <label>Nombre</label>
+                <input type="text" id="inputNombre" name="nombre" autofocus required>
+                <br>
+                <label>Apellidos</label>
+                <input type="text" id="inputApellidos" name="apellidos" required>
+                <br>
+                <label>Edad</label>
+                <input type="text" id="inputEquipo" name="equipo" required>
+                <br>
+                <label>Clase</label>
+                <input type="text" id="inputColor" name="color" required>
+            </form>
+            <div id="botones">
+                <input type="button" value="Agregar" id="agregar" onclick="agregar()">
+                <input type="button" value="crear lista" id="agregar">
+                <input type="button" value="Guardar lista" id="agregar">
+            </div>
+        </div>
+
+        <section>
+            <div>
+                <table id="tablaDatos">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Edad</th>
+                        <th>Clase</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Administrador de listas 2023 | Todos los derechos reservados</p>
+    </footer>
+
     <script src="./index.js" type="text/javascript"></script>
+    <script src="./prueba.js" type="text/javascript"></script>
 </body>
+
 </html>

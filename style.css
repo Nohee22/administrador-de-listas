@@ -1,0 +1,164 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(imágenes/fondo\ 4.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #143F6B;
+  width: 100%;
+  position: fixed;
+}
+
+/* nav */
+#logoNavegador {
+  width: 70px;
+}
+
+.leftSide {
+  float: left;
+}
+
+.rightSide {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* sombreado cuando se pasa el cursor */
+.rightSide li:hover {
+  background: #f24c4c;
+}
+
+/* desplegable nav  */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  background-color: #143F6B;
+  box-shadow: 0px 10px 10px 0px rgb(183, 182, 182);
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
+form {
+  text-align: left;
+  border-radius: 5px;
+  width: 25em;
+  height: 300px;
+  padding-left: 2em;
+  padding-top: 2em;
+  background-color: #FEB139;
+  margin-left: 3.5em;
+  margin-top: 10em;
+}
+
+label {
+  background-color: #f24c4c;
+  padding: 0.5em;
+  border-radius: 5px;
+  color: white;
+  width: 10em;
+  text-align: center;
+  vertical-align: center;
+}
+
+input {
+  margin-right: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  ;
+  border: solid 1px #dcc7c7;
+  padding: 7px;
+  border-radius: 10px;
+  width: 17em;
+}
+
+#botones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 25em;
+  margin-top: 1em;
+}
+
+#agregar {
+  background-color: #f24c4c;
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  width: 10vw;
+  margin-left: 0.8em;
+}
+
+table {
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  margin-top: 10em;
+}
+
+th {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400px;
+  background-color: #FEB139;
+  color: white;
+  width: auto;
+}
+
+#eliminar {
+  padding: 1px;
+  width: 80px;
+}
+
+footer {
+  width: 100vw;
+  background-color: brown;
+  color: white;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
+}
+
+
+@media (max-width:320px){
+  
+  
+
+
+}
